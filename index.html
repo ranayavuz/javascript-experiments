@@ -20,5 +20,14 @@
 <form action="ag.php">
   <input type="submit" value="download smth">
 </form>
+    <p>json parsing of this '{"name":"George"}'</p>
+    <p id="jsonparse"></p>
+    <p id="jsobject"></p>
+    <script>
+      var jsonn = '{"name":"George"}'
+      var parse = JSON.parse(jsonn)
+      getElementById("jsonparse").innerHTML=parse.name
+      getElementById("jsobject").innerHTML=parse
+    </script>
   </body>
 </html>
