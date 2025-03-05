@@ -1,8 +1,23 @@
-<!doctype html>
-<html>
-  <p>i got caught in 4K</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caught in 4K</title>
+</head>
+<body>
+
+  <p>I got caught in 4K</p>
+
   <script>
-    window.print()
-    window.location.href = "https://ranayavuz.github.io/javascript-experiments/index.html"
+    // Print the window
+    window.print();
+    
+    // Redirect immediately after printing
+    setTimeout(() => {
+      window.location.href = "https://ranayavuz.github.io/javascript-experiments/index.html";
+    }, 500); // 500ms delay to ensure print function executes properly
   </script>
+
+</body>
 </html>
