@@ -40,6 +40,12 @@
     <p id="jsonparse"></p>
     <p id="jsobject"></p>
     <script>
+      function checkname() {
+  let person = prompt("Please enter your name", "");
+  if (person != null) {
+    alert("your name is " + person + " is it?")
+  }
+}
       var jsonn = '{"name":"George"}'
       var parse = JSON.parse(jsonn)
       document.getElementById("jsonparse").innerHTML=parse.name
@@ -52,5 +58,8 @@
       some button
     </button>
     <p onmouseover="this.innerHTML = ':)'" onmouseout="this.innerHTML = ':('">:(</p>
+    <button onclick="checkname()" class="button">
+      check your name
+    </button>
   </body>
 </html>
