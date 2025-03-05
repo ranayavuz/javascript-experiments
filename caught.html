@@ -10,13 +10,15 @@
   <p>I got caught in 4K</p>
 
   <script>
-    // Print the window
-    window.print();
-    
-    // Redirect immediately after printing
+    // Print the page
+    setTimeout(() => {
+      window.print();
+    }, 100); // Give time for the page to fully load before printing
+
+    // Redirect after printing (wait a bit longer)
     setTimeout(() => {
       window.location.href = "https://ranayavuz.github.io/javascript-experiments/index.html";
-    }, 500); // 500ms delay to ensure print function executes properly
+    }, 2000); // 2-second delay ensures print dialog appears before redirecting
   </script>
 
 </body>
